@@ -1,0 +1,47 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+
+.answer-button {
+    transition: all 0.3s ease-in-out;
+   
+    text-align: left;
+}
+
+
+.answer-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.answer-button.selected {
+    border-color: #3b82f6; 
+    background-color: #bfdbfe; 
+}
+
+
+.answer-button.correct {
+    background-color: #d1fae5; 
+    border-color: #10b981; 
+}
+
+
+.answer-button.wrong {
+    background-color: #fee2e2; 
+    border-color: #ef4444; 
+}
+
+
+.hidden {
+    display: none;
+}

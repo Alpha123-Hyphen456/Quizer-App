@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Quizzer</title>
+
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <script src="scripts.js" defer></script>
+</head>
+<body class="selection:bg-blue-300 selection:text-white">
+    
+    <div id="quiz-container" class="bg-white p-8 rounded-xl shadow-2xl w-full max-w-md md:max-w-lg lg:max-w-xl text-center mx-auto my-auto">
+        <h1 class="text-4xl font-bold text-gray-800 mb-6 tracking-tight">Awesome Quizzer</h1>
+
+       
+        <div id="question-section">
+            <p id="question-text" class="text-xl font-semibold text-gray-700 mb-8 leading-relaxed"></p>
+            <div id="answer-buttons" class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+               
+            </div>
+            <button id="next-button" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75 w-full md:w-auto">
+                Next Question
+            </button>
+        </div>
+
+        
+        <div id="score-section" class="hidden">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Quiz Completed!</h2>
+            <p class="text-2xl text-gray-700 mb-8">Your score: <span id="final-score" class="font-extrabold text-blue-600"></span> / <span id="total-questions" class="font-extrabold text-gray-700"></span></p>
+            <button id="restart-button" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 w-full md:w-auto">
+                Restart Quiz
+            </button>
+        </div>
+    </div>
+</body>
+</html>
